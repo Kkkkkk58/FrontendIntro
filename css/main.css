@@ -265,18 +265,19 @@ textarea {
 
 #header {
   background-image: linear-gradient(#FCFCF7, #C2C1BE);
+  z-index: 100;
 }
 
 #header .logo {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 
 #nav {
   width: 1200px;
   margin: 0 auto;
-  height: 90px;
+  height: 70px;
   text-align:center;
 }
 
@@ -313,7 +314,7 @@ textarea {
 
 #header h1 {
   position: relative;
-  top: 18px;
+  top: 12px;
   left: 10px;
 }
 
@@ -332,6 +333,150 @@ textarea {
 #header.fixed h1 {
   font-size: 130%;
   top: 9px
+}
+
+.gallery-container {
+  max-width: 100%;
+  max-height: 480px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  vertical-align: middle;
+  z-index: -1;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent, black);
+  z-index: 1;
+}
+
+.slide-caption {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  z-index: 2;
+}
+
+.slide-caption h1 {
+  color: #cccccc;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.star-rating {
+  font-size: 24px;
+}
+
+.star-rating a {
+  text-decoration: none;
+}
+
+.star-rating i {
+  color: #ddd;
+  transition: color 0.2s;
+}
+
+.star-rating .lit i {
+  color: gold;
+}
+
+.star-rating a:hover i,
+.star-rating a:focus i,
+.star-rating a:focus ~ a i {
+  color: gold;
+  transform: scale(1.2);
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #818a91;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #555555;
+}
+
+.dot-switcher {
+  text-align: center;
+}
+
+.slide-caption {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: .9}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: .9}
+}
+
+.gallery {
+  margin-bottom: 40px;
 }
 
 footer

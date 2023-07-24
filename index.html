@@ -8,12 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+  <link rel="manifest" href="site.webmanifest" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="apple-mobile-web-app-title" content="ReelRate">
   <meta name="application-name" content="ReelRate">
@@ -32,6 +33,94 @@
   </nav>
 </header>
 <main>
+  <div class="gallery">
+    <div class="gallery-container">
+      <div class="gallery-element">
+        <div class="slide fade">
+          <img src="img/gallery/1.jpg" alt="1">
+        </div>
+        <div class="slide-caption fade">
+          <h1>Барби (2023)</h1>
+          <div class="star-rating">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star-half-o"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-element">
+        <div class="slide fade">
+          <img src="img/gallery/2.jpg" alt="2">
+        </div>
+        <div class="slide-caption">
+          <h1>Оппенгеймер (2023)</h1>
+          <div class="star-rating">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star-half-o"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-element">
+        <div class="slide fade">
+          <img src="img/gallery/3.jpg" alt="3">
+        </div>
+        <div class="slide-caption">
+          <h1>ДАУ. Вырождение (2020)</h1>
+          <div class="star-rating">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star-half-o"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="dot-switcher">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a consequat orci. Suspendisse consectetur justo ac
     dictum fermentum. Nullam venenatis auctor lorem non laoreet. Ut vitae vehicula leo. Morbi eu consequat tortor. Etiam
     cursus dolor quis urna interdum, ac cursus dui placerat. Vivamus semper dui consequat lectus ultrices, quis auctor
@@ -75,6 +164,9 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script type="module" src="js/auth.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script type="module" src="js/starring-redirect.js"></script>
 </main>
 
 <footer>
