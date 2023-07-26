@@ -669,6 +669,23 @@ footer {
   line-height:24px;
   color:#C2C1BE;
 }
+.footer-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.copyright-col {
+  flex: 0 0 66.7%;
+  max-width: 66.7%;
+}
+.social-icons-col {
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
+}
+
 footer a {
   color:#C2C1BE;
 }
@@ -692,7 +709,7 @@ footer .social-icons a {
   margin:0
 }
 @media (max-width:991px) {
-  footer [class^=col-] {
+  footer [class^=col] {
     margin-bottom:30px
   }
 }
@@ -700,7 +717,7 @@ footer .social-icons a {
   footer {
     padding-bottom:0
   }
-  footer .copyright-text,.site-footer .social-icons {
+  footer .copyright-text, .social-icons {
     text-align:center
   }
 }
