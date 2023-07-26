@@ -180,9 +180,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -254,6 +254,7 @@ textarea {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
@@ -366,6 +367,7 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+
 .modal-content {
   position: relative;
   width: 400px;
@@ -385,24 +387,30 @@ textarea {
   border-bottom: 2px solid #ccc;
   margin-bottom: 20px;
 }
+
 .modal-content label {
   line-height: 100%;
 }
+
 #search-btn:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 #search-btn:focus {
   outline: none;
 }
+
 #search-input {
   flex: 1;
   padding: 10px;
   font-size: 16px;
   border: none;
 }
+
 #search-input:focus {
   outline: none;
 }
+
 #search-results {
   list-style: none;
   padding: 0;
@@ -410,9 +418,11 @@ textarea {
   max-height: 200px;
   overflow-y: auto;
 }
+
 #search-results ul {
   max-height: 100%;
 }
+
 #search-results li {
   display: flex;
   flex-direction: column;
@@ -423,6 +433,7 @@ textarea {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 #search-results li:hover {
   background-color: #f2f2f2;
 }
@@ -431,15 +442,18 @@ textarea {
   display: none;
   flex-direction: column;
   background-color: #f1f1f1;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
 #user-dropdown li a {
   line-height: 100%;
   transition: all 0.3s ease-in-out;
 }
+
 #header.fixed #user-dropdown li a {
   font-size: 20px;
 }
+
 #user-dropdown li {
   display: flex;
   flex-direction: column;
@@ -447,12 +461,15 @@ textarea {
   padding: 0;
   line-height: 100%;
 }
+
 #user-dropdown li a {
   z-index: 1;
 }
+
 #user-btn:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 #user-btn:focus {
   outline: none;
 }
@@ -588,13 +605,21 @@ textarea {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: .9}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: .9
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: .9}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: .9
+  }
 }
 
 .gallery {
@@ -628,21 +653,24 @@ h2 {
   margin-bottom: 30px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease-in-out;
 }
+
 .movie-card:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-10px);
 }
+
 .movie-card img {
   width: 100%;
   height: 360px;
   display: block;
   object-fit: cover;
 }
+
 .movie-card-body {
   position: absolute;
   top: 0;
@@ -656,117 +684,137 @@ h2 {
   background-image: linear-gradient(transparent, black);
   transition: 0.5s ease;
 }
+
 .movie-card:hover .movie-card-body {
   opacity: .7;
 }
 
 footer {
-  background-color:#702233;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#C2C1BE;
+  background-color: #702233;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #C2C1BE;
 }
+
 .footer-container {
   max-width: 90%;
   margin: 0 auto;
 }
+
 .footer-row {
   display: flex;
   flex-wrap: wrap;
 }
+
 .copyright-col {
   flex: 0 0 66.7%;
   max-width: 66.7%;
 }
+
 .social-icons-col {
   flex: 0 0 33.3%;
   max-width: 33.3%;
 }
 
 footer a {
-  color:#C2C1BE;
+  color: #C2C1BE;
 }
+
 footer a:hover {
-  color:#cccccc;
-  text-decoration:none;
+  color: #cccccc;
+  text-decoration: none;
 }
+
 footer .social-icons {
-  text-align:right
+  text-align: right
 }
+
 footer .social-icons a {
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#361c15
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #361c15
 }
+
 .copyright-text {
-  margin:0
+  margin: 0
 }
-@media (max-width:991px) {
+
+@media (max-width: 991px) {
   footer [class^=col] {
-    margin-bottom:30px
+    margin-bottom: 30px
   }
 }
-@media (max-width:767px) {
+
+@media (max-width: 767px) {
   footer {
-    padding-bottom:0
+    padding-bottom: 0
   }
+
   footer .copyright-text, .social-icons {
-    text-align:center
+    text-align: center
   }
 }
+
 .social-icons {
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none
 }
+
 .social-icons li {
-  display:inline-block;
-  margin-bottom:4px
+  display: inline-block;
+  margin-bottom: 4px
 }
+
 .social-icons li.title {
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px
 }
 
 .social-icons a {
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear
 }
+
 .social-icons a.github:hover {
-  background-color:#0d1117
+  background-color: #0d1117
 }
+
 .social-icons a.telegram:hover {
-  background-color:#29a9eb
+  background-color: #29a9eb
 }
+
 .social-icons a.vk:hover {
-  background-color:#0077ff
+  background-color: #0077ff
 }
+
 .social-icons a.youtube:hover {
-  background-color:#ff1616
+  background-color: #ff1616
 }
-@media (max-width:767px) {
+
+@media (max-width: 767px) {
   .social-icons li.title {
-    display:block;
-    margin-right:0;
-    font-weight:600
+    display: block;
+    margin-right: 0;
+    font-weight: 600
   }
 }

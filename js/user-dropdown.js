@@ -1,4 +1,4 @@
-import { isLoggedIn } from './auth.js'
+import {isLoggedIn} from './auth.js'
 
 const userBtn = document.getElementById('user-btn');
 const userDropdown = document.getElementById('user-dropdown');

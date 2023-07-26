@@ -1,4 +1,4 @@
-import { isLoggedIn } from './auth.js'
+import {isLoggedIn} from './auth.js'
 
 const starLinks = document.querySelectorAll('.star-rating a');
 
