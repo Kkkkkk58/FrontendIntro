@@ -659,18 +659,6 @@ h2 {
 .movie-card:hover .movie-card-body {
   opacity: .7;
 }
-.movie-card-title {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-.movie-card-text {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.movie-details-link {
-  display: block;
-  margin-top: 10px;
-}
 
 footer {
   background-color:#702233;
