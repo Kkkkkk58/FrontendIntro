@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>ReelRate</title>
+  <meta name="description" content="ReelRate - movie rating platform">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="manifest" href="site.webmanifest"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="ReelRate">
+  <meta name="application-name" content="ReelRate">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<header id="header">
+  <a href="index.html"><img src="img/logo_transparent.png" alt="logo" class="logo"></a>
+  <h1>ReelRate</h1>
+
+  <ul>
+    <li>
+      <button id="search-btn">Поиск</button>
+      <div id="search-modal" class="modal">
+        <div class="modal-content">
+          <label for="search-input">Поиск:</label>
+          <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input type="text" id="search-input" autocomplete="off" placeholder="Введите запрос...">
+          </div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <nav id="nav">
+    <ul>
+      <li>
+        <button id="user-btn"><i class="fa fa-user"></i></button>
+        <div id="user-dropdown">
+          <ul>
+            <li><a href="#">Мой профиль</a></li>
+            <li><a href="#">Мои оценки</a></li>
+            <li><a href="#">Активность друзей</a></li>
+            <li><a href="#">Список желаний</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+</header>
+<main>
+  <div class="gallery">
+    <div class="gallery-container">
+      <div class="gallery-element">
+        <div class="slide fade">
+          <img src="img/gallery/new/1.jpg" alt="1">
+        </div>
+        <div class="slide-caption fade">
+          <h1>Барби (2023)</h1>
+          <div class="star-rating">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star-half-o"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-element">
+        <div class="slide fade">
+          <img src="img/gallery/new/2.jpg" alt="2">
+        </div>
+        <div class="slide-caption">
+          <h1>Оппенгеймер (2023)</h1>
+          <div class="star-rating">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star-half-o"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-element">
+        <div class="slide fade">
+          <img src="img/gallery/new/3.jpg" alt="3">
+        </div>
+        <div class="slide-caption">
+          <h1>ДАУ. Вырождение (2020)</h1>
+          <div class="star-rating">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="dot-switcher">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+
+  <div class="movie-container">
+    <h2>Популярные фильмы</h2>
+    <div class="movie-row">
+      <div class="movie-card">
+        <img src="img/trending/movies/1.jpg" alt="1">
+        <div class="movie-card-body"></div>
+      </div>
+      <div class="movie-card">
+        <img src="img/trending/movies/2.jpg" alt="2">
+        <div class="movie-card-body"></div>
+      </div>
+      <div class="movie-card">
+        <img src="img/trending/movies/3.jpg" alt="3">
+        <div class="movie-card-body"></div>
+      </div>
+      <div class="movie-card">
+        <img src="img/trending/movies/4.jpg" alt="4">
+        <div class="movie-card-body"></div>
+      </div>
+      <div class="movie-card">
+        <img src="img/trending/movies/5.jpg" alt="5">
+        <div class="movie-card-body"></div>
+      </div>
+    </div>
+
+    <h2>Популярные сериалы</h2>
+    <div class="movie-row">
+      <div class="movie-card">
+        <img src="img/trending/series/1.jpg" alt="1">
+        <div class="movie-card-body"></div>
+      </div>
+      <div class="movie-card">
+        <img src="img/trending/series/2.jpg" alt="2">
+        <div class="movie-card-body"></div>
+      </div>
+      <div class="movie-card">
+        <img src="img/trending/series/3.jpg" alt="3">
+        <div class="movie-card-body"></div>
+      </div>
+      <div class="movie-card">
+        <img src="img/trending/series/4.jpg" alt="4">
+        <div class="movie-card-body"></div>
+      </div>
+      <div class="movie-card">
+        <img src="img/trending/series/5.jpg" alt="5">
+        <div class="movie-card-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module" src="js/auth.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script type="module" src="js/starring-redirect.js"></script>
+  <script src="js/search.js"></script>
+  <script type="module" src="js/user-dropdown.js"></script>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="copyright-col">
+        <p class="copyright-text">
+          Copyright &copy; 2023 All rights reserved by <a href="#">ReelRate</a>.
+        </p>
+      </div>
+      <div class="social-icons-col">
+        <ul class="social-icons">
+          <li><a class="github" href="https://github.com/Kkkkkk58"><i class="fa fa-github"></i></a></li>
+          <li><a class="telegram" href="https://t.me/KKhasan"><i class="fa fa-telegram"></i></a></li>
+          <li><a class="vk" href="https://vk.com/karimkhasan"><i class="fa fa-vk"></i></a></li>
+          <li><a class="youtube" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+
+</html>
