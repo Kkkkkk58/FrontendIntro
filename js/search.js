@@ -15,7 +15,30 @@ const defaultValues = [
   'Индиана Джонс и Королевство хрустального черепа'
 ];
 
+function getValues() {
+  return defaultValues;
+}
+
+function showFilteredSearchItems(query = '') {
+  function getFilteredValues(query) {
+    if (query === '') {
+      return getValues();
+    }
+    return getValues().filter(value => value.toLowerCase().startsWith(query));
+  }
+
+  const filteredValues = getFilteredValues(query);
+
+  searchResults.innerHTML = '';
+  for (let item of filteredValues) {
+    const li = document.createElement('li');
+    li.textContent = item;
+    searchResults.appendChild(li);
+  }
+}
+
 searchBtn.addEventListener('click', () => {
+  showFilteredSearchItems();
   searchModal.style.display = 'flex';
 });
 
@@ -27,15 +50,6 @@ window.addEventListener('click', (event) => {
 
 searchInput.addEventListener('input', () => {
   const query = searchInput.value.toLowerCase();
-  let filteredValues;
-  if (query !== '') {
-    filteredValues = defaultValues.filter(value => value.toLowerCase().startsWith(query))
-  }
-
-  searchResults.innerHTML = '';
-  for (let item of filteredValues) {
-    const li = document.createElement('li');
-    li.textContent = item;
-    searchResults.appendChild(li);
-  }
+  showFilteredSearchItems(query);
 });
+
