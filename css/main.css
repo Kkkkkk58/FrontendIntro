@@ -602,29 +602,24 @@ textarea {
   margin-bottom: 40px;
 }
 
-footer
-{
+footer {
   background-color:#702233;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
   color:#C2C1BE;
 }
-footer a
-{
+footer a {
   color:#C2C1BE;
 }
-footer a:hover
-{
+footer a:hover {
   color:#cccccc;
   text-decoration:none;
 }
-footer .social-icons
-{
+footer .social-icons {
   text-align:right
 }
-footer .social-icons a
-{
+footer .social-icons a {
   width:40px;
   height:40px;
   line-height:40px;
@@ -633,41 +628,32 @@ footer .social-icons a
   border-radius:100%;
   background-color:#361c15
 }
-.copyright-text
-{
+.copyright-text {
   margin:0
 }
-@media (max-width:991px)
-{
-  footer [class^=col-]
-  {
+@media (max-width:991px) {
+  footer [class^=col-] {
     margin-bottom:30px
   }
 }
-@media (max-width:767px)
-{
-  footer
-  {
+@media (max-width:767px) {
+  footer {
     padding-bottom:0
   }
-  footer .copyright-text,.site-footer .social-icons
-  {
+  footer .copyright-text,.site-footer .social-icons {
     text-align:center
   }
 }
-.social-icons
-{
+.social-icons {
   padding-left:0;
   margin-bottom:0;
   list-style:none
 }
-.social-icons li
-{
+.social-icons li {
   display:inline-block;
   margin-bottom:4px
 }
-.social-icons li.title
-{
+.social-icons li.title {
   margin-right:15px;
   text-transform:uppercase;
   color:#96a2b2;
@@ -690,38 +676,20 @@ footer .social-icons a
   -o-transition:all .2s linear;
   transition:all .2s linear
 }
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.github:hover
-{
+.social-icons a.github:hover {
   background-color:#0d1117
 }
-.social-icons a.telegram:hover
-{
+.social-icons a.telegram:hover {
   background-color:#29a9eb
 }
-.social-icons a.vk:hover
-{
+.social-icons a.vk:hover {
   background-color:#0077ff
 }
-.social-icons a.youtube:hover
-{
+.social-icons a.youtube:hover {
   background-color:#ff1616
 }
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
+@media (max-width:767px) {
+  .social-icons li.title {
     display:block;
     margin-right:0;
     font-weight:600
