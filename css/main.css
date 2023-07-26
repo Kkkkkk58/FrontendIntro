@@ -262,24 +262,28 @@ textarea {
 }
 
 #header {
+  position: fixed;
   background-image: linear-gradient(#FCFCF7, #C2C1BE);
   width: 100%;
   margin: 0 auto;
   height: 70px;
   text-align: right;
   z-index: 100;
+  transition: all 0.3s ease-in-out;
 }
 
 #header .logo {
   float: left;
   width: 60px;
   height: 60px;
+  transition: all 0.3s ease-in-out;
 }
 
 #header h1 {
   padding: 0;
   margin: 0;
   float: left;
+  transition: all 0.3s ease-in-out;
 }
 
 #header ul {
@@ -292,6 +296,7 @@ textarea {
 
 #header button {
   font-size: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 #header #nav {
@@ -307,6 +312,7 @@ textarea {
   display: inline;
   line-height: 70px;
   padding: 5px 15px;
+  transition: all 0.3s ease-in-out;
 }
 
 #header li a {
@@ -327,7 +333,6 @@ textarea {
 }
 
 #header.fixed {
-  position: fixed;
   top: 0;
   width: 100%;
   height: 50px;
@@ -423,12 +428,15 @@ textarea {
   background-color: #f2f2f2;
 }
 
-#header #nav #user-dropdown {
+#user-dropdown {
   display: none;
   flex-direction: column;
+  background-color: #f1f1f1;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-#header #user-dropdown li a {
+#user-dropdown li a {
   line-height: 100%;
+  transition: all 0.3s ease-in-out;
 }
 #header.fixed #user-dropdown li a {
   font-size: 20px;
@@ -439,9 +447,6 @@ textarea {
   cursor: pointer;
   padding: 0;
   line-height: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 #user-dropdown li a {
   z-index: 1;
