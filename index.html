@@ -30,6 +30,19 @@
   <nav id="nav">
     <a href="index.html"><img src="img/logo_transparent.png" alt="logo" class="logo"></a>
     <h1>ReelRate</h1>
+
+    <ul>
+      <li>
+        <button id="search-btn">Поиск</button>
+        <div id="search-modal" class="modal">
+          <div class="modal-content">
+            <label for="search-input">Поиск:</label>
+            <input type="text" id="search-input" placeholder="Введите запрос...">
+            <ul id="search-results"></ul>
+          </div>
+        </div>
+      </li>
+    </ul>
   </nav>
 </header>
 <main>
@@ -121,6 +134,31 @@
     </div>
   </div>
 
+  <div class="container">
+    <h2>Популярные фильмы</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/popular/1.jpg" alt="1">
+          <div class="card-body">
+            <h5 class="card-title">Крестный отец (1972)</h5>
+            <p class="card-text">Криминальная сага о мафиозной семье Корлеоне.</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/popular/2.jpg" alt="2">
+          <div class="card-body">
+            <h5 class="card-title">Зеленая книга (2018)</h5>
+            <p class="card-text">История о необычной дружбе между итальянцем и афроамериканцем в 60-х годах.</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a consequat orci. Suspendisse consectetur justo ac
     dictum fermentum. Nullam venenatis auctor lorem non laoreet. Ut vitae vehicula leo. Morbi eu consequat tortor. Etiam
     cursus dolor quis urna interdum, ac cursus dui placerat. Vivamus semper dui consequat lectus ultrices, quis auctor
@@ -130,43 +168,13 @@
     tincidunt, lorem est imperdiet diam, eu fermentum libero nisl non massa. Etiam neque risus, efficitur a purus non,
     convallis scelerisque sem. Praesent a lacus id turpis condimentum sodales eu a dolor.
   </p>
-  <p>Nullam vel justo id est feugiat convallis ut in turpis. Duis tincidunt urna sit amet tellus egestas, venenatis
-    commodo nulla pulvinar. Pellentesque consequat odio non elit fringilla feugiat. Integer interdum, ipsum at vehicula
-    bibendum, risus augue pharetra odio, sed ultrices ligula diam quis mauris. Ut feugiat suscipit erat, gravida
-    faucibus justo dictum vel. Ut tincidunt et lacus eu varius. Integer pharetra suscipit varius. Nunc at finibus ante,
-    a porta ipsum. Aliquam erat volutpat. Duis eu erat et ligula elementum luctus. Proin consequat nisl leo, in volutpat
-    lorem pretium quis.
-  </p>
-  <p>In non tortor consequat, congue enim id, congue purus. Phasellus nisl augue, iaculis ac turpis in, volutpat dapibus
-    mauris. Fusce et laoreet nulla. Suspendisse blandit, mi et bibendum maximus, dui nunc faucibus enim, efficitur
-    accumsan ex sem at ligula. Integer aliquam felis nec mattis aliquam. Proin dapibus lectus nunc, et ullamcorper massa
-    consequat sollicitudin. Vivamus dolor urna, mattis sit amet auctor sit amet, dapibus nec metus. Nulla facilisi.
-    Etiam sed varius justo, nec elementum quam. Donec non eros vulputate ante pulvinar convallis vitae sit amet odio.
-    Vivamus nisl orci, congue ut venenatis vitae, cursus a purus. Cras cursus interdum tincidunt. Aenean vitae egestas
-    lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-  </p>
-  <p>Nunc ut tempus neque. Integer sollicitudin magna sem, ac mattis elit bibendum in. Morbi molestie congue dui, eget
-    gravida odio rhoncus sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt semper
-    metus vitae pellentesque. Donec at aliquet leo. Vestibulum a fringilla magna, sed vehicula leo. Nullam id ligula
-    auctor, malesuada nibh pellentesque, tincidunt mi. Suspendisse vulputate augue lectus, a finibus quam finibus a.
-    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ac condimentum
-    justo, eget accumsan ipsum. Suspendisse ac metus et neque molestie tincidunt. Duis dictum elit a lacinia accumsan.
-    Nulla elementum vestibulum tempus. Nunc sed lobortis sapien.
-  </p>
-  <p>Aenean iaculis mi et nibh finibus, ornare dapibus leo ullamcorper. Nunc luctus vitae metus at ornare. Vivamus nisi
-    nisi, ultricies vel molestie vitae, ultricies pharetra felis. Quisque mollis rhoncus dignissim. In egestas justo
-    quis malesuada dapibus. Cras rhoncus ultricies leo, eget condimentum sem. Fusce pellentesque tempor fermentum.
-    Phasellus facilisis metus vitae ligula aliquet, nec mattis erat imperdiet. Ut hendrerit tortor sit amet sem sodales
-    molestie. Sed egestas ante sed convallis mollis. Vestibulum aliquet elit dui, ut mollis nisi iaculis sit amet. Nunc
-    eget ornare tellus, sed tristique lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-    cubilia curae; Integer fringilla arcu in gravida tempus.
-  </p>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script type="module" src="js/auth.js"></script>
   <script src="js/slideshow.js"></script>
   <script type="module" src="js/starring-redirect.js"></script>
+  <script src="js/search.js"></script>
 </main>
 
 <footer>
